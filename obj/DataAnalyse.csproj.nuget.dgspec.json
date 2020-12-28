@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/hadoop/myProject/DataAnalyse/DataAnalyse.csproj": {}
+    "D:\\study\\大三3\\大数据\\TelDataAnalyse\\DataAnalyse.csproj": {}
   },
   "projects": {
-    "/home/hadoop/myProject/DataAnalyse/DataAnalyse.csproj": {
+    "D:\\study\\大三3\\大数据\\TelDataAnalyse\\DataAnalyse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hadoop/myProject/DataAnalyse/DataAnalyse.csproj",
+        "projectUniqueName": "D:\\study\\大三3\\大数据\\TelDataAnalyse\\DataAnalyse.csproj",
         "projectName": "DataAnalyse",
-        "projectPath": "/home/hadoop/myProject/DataAnalyse/DataAnalyse.csproj",
-        "packagesPath": "/home/hadoop/.nuget/packages/",
-        "outputPath": "/home/hadoop/myProject/DataAnalyse/obj/",
+        "projectPath": "D:\\study\\大三3\\大数据\\TelDataAnalyse\\DataAnalyse.csproj",
+        "packagesPath": "C:\\Users\\zhangbig\\.nuget\\packages\\",
+        "outputPath": "D:\\study\\大三3\\大数据\\TelDataAnalyse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/hadoop/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\zhangbig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
