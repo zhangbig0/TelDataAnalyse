@@ -1,11 +1,12 @@
 ﻿using System;
+using DataAnalyse.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 
 #nullable disable
 
-namespace DataAnalyse
+namespace DataAnalyse.Infrastructure
 {
     public partial class telecomContext : DbContext
     {
@@ -27,7 +28,9 @@ namespace DataAnalyse
             if (!optionsBuilder.IsConfigured)
             {
 // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=10.132.221.130;database=telecom;user=stu_readonly;password=stu_readonly;treattinyasboolean=true", Microsoft.EntityFrameworkCore.ServerVersion.FromString("5.7.32-mysql"));
+                optionsBuilder.UseMySql(
+                    "server=10.132.221.130;database=telecom;user=stu_readonly;password=stu_readonly;treattinyasboolean=true",
+                    Microsoft.EntityFrameworkCore.ServerVersion.FromString("5.7.32-mysql"));
             }
         }
 
@@ -118,9 +121,9 @@ namespace DataAnalyse
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasKey(e => new { e.Phone, e.Idno })
+                entity.HasKey(e => new {e.Phone, e.Idno})
                     .HasName("PRIMARY")
-                    .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
+                    .HasAnnotation("MySql:IndexPrefixLength", new[] {0, 0});
 
                 entity.ToTable("user");
 

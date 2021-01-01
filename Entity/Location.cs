@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace DataAnalyse
+namespace DataAnalyse.Entity
 {
     public partial class Location
     {

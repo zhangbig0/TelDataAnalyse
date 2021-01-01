@@ -1,9 +1,8 @@
 using System;
 using DataAnalyse;
 using System.Linq;
-using service;
 
-namespace service
+namespace DataAnalyse.Services
 {
     public class PersonAnalyse
     {
